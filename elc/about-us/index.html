@@ -847,7 +847,7 @@
                                 >
                               </li>
                               <li>
-                                <a href="#" aria-label="contact link">
+                                <a href="tel:+233537783166" aria-label="contact link">
                                   (+233)-53-778-3166</a
                                 >
                               </li>
@@ -979,7 +979,8 @@
                                 id="menu-item-711"
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-711"
                               >
-                                <a href="contact/index.html">Contact</a>
+                            
+                                <a href="../contact/index.html">Contact</a>
                               </li>
                             </ul>
                           </nav>
@@ -3460,7 +3461,10 @@
     </script>
     <script
       src="../wp-content/plugins/elementor/assets/js/frontend.min5f06.js?ver=3.23.2"
-      id="elementor-frontend-js"
-    ></script>
+      id="elementor-frontend-js">
+      jQuery(window).on('load', function() {
+        jQuery("#preloader").delay(1500).fadeOut(400); 
+    });
+    </script>
   </body>
 </html>

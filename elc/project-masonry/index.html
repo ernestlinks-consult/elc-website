@@ -3390,6 +3390,11 @@
     <script
       src="../wp-content/plugins/elementor/assets/js/frontend.min5f06.js?ver=3.23.2"
       id="elementor-frontend-js"
-    ></script>
+    >
+    jQuery(window).on('load', function() {
+        // Forces the preloader to disappear after 1 second
+        jQuery("#preloader").delay(1000).fadeOut(400); 
+    });
+  </script>
   </body>
 </html>
